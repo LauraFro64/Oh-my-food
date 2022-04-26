@@ -1,0 +1,406 @@
+body
+{
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2
+{
+   font-family: "Shrikhand", sans-serif;
+   font-weight: 500;
+   font-size: 32px; 
+   padding-left: 30px;
+   padding-top: 25px;
+}
+
+
+/** HEADER : LOGO + PHOTO **/
+
+.fa-arrow-left
+    {
+        position: absolute;
+        font-size: 40px;
+        top: 1.5rem;
+        left: 2rem;
+        &:hover
+        {
+            color: $color-tertiary;
+        }
+    }
+
+.logo
+{
+  text-align: center;
+  padding: 10px;
+  img 
+  {
+      width: 50%;
+  }
+}
+
+.image_restaurant img
+{
+    width: 100%;
+    object-fit: cover;
+}
+
+/** MAIN : MENU **/
+h3
+{
+    padding-left: 30px;
+    font-size: 28px;
+    font-weight: 300;
+    &::after
+    {
+        content:"";
+        display: block;
+        margin-top:5px;
+        width: 65px;
+        height: 3px;
+        background-color: $color-tertiary;
+    }
+}
+
+.heart
+{
+    @include heart;
+    @include heart2;
+    position: absolute;
+    right: 7rem;
+    top: 2rem;
+}
+
+h4
+{
+    font-size: 22px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 0.7s;
+}
+.menu 
+{
+    background-color: $colorBG1;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    position: relative;
+    margin-top: -200px;
+    padding-bottom: 165px;
+    .description
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .text
+        {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0px;
+            font-size: 20px;
+            font-weight: 300;
+            width: 80%;
+            transition: all 0.7s;
+        }
+    }
+}
+
+.price
+{
+    transition: transform 0.5s;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    margin-top: 0px;
+    font-size: 22px;
+
+}
+
+.card_check
+{   
+    width: 20%;
+    background: $color-tertiary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 25px 25px 0;
+    margin: -63px -90px 0px 0px;
+    transition: all ease-in-out 0.3s;
+    visibility: hidden;
+    .fa-check-circle
+    {
+        color: #ffffff;
+        font-size: 35px;
+    }
+}
+
+.entrée1, .entrée2, .entrée3, .entrée4, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3
+{
+    @include card;
+
+        &:hover .card_check
+        {
+            transform: translateX(-80px);
+            transition: all ease-in-out 0.5s;
+            visibility: visible;
+        }
+        &:hover .fa-check-circle
+        {
+            transform: rotate(360deg);
+            transition: transform 0.5s ease-in-out;
+        }
+        &:hover .price 
+        {
+            transform: translateX(-65%);
+            transition: transform ease-in-out 0.5s;
+        }  
+        &:hover .text
+        {
+            width: 60%;
+        }
+        &:hover h4
+        {
+            width: 70%;
+        }
+}
+
+.entrées
+{
+    animation: slide_menu 3s linear;
+    
+}
+
+.plats
+{
+    animation: slide_menu 3s linear;
+    animation-delay: .4s;
+}
+
+.desserts
+{
+    animation: slide_menu 3s linear;
+    animation-delay: .8s;
+}
+
+.button 
+{
+    padding: 20px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+    a
+    {
+      @include button;
+    }
+}
+/** MEDIA QUERIES : VERSION MOBILE ++ **/
+
+@media screen and (max-width:580px) 
+{
+    .fa-arrow-left
+    {
+        top: 13px;
+    }
+    
+    h2, h3
+    {
+        font-size: 28px;
+    }
+    h4 
+    {
+        font-size: 22px;
+        margin-top: 6px;
+    }
+
+    .menu .description .text, .price
+    {
+        font-size: 20px;
+    }
+
+    .heart
+    {
+        top:1.5rem
+    }
+
+    .fa-check-circle
+    {
+        padding-top: 18px;
+        padding-right: 10px;
+        width: 25px;
+    }
+    
+    .button a
+    {
+        padding: 16px 24px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:490px) 
+{
+
+    h4 
+    {
+        font-size: 18px;
+    }
+
+    .menu .description .text, .price
+    {
+        font-size: 16px;
+    }
+
+    .entrée1, .entrée2, .entrée3, .entrée4, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3
+    {
+        margin: 15px 25px;
+    }
+
+    .button a
+    {
+        padding: 15px 23px;
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width:410px) 
+{
+    h2
+    {
+        font-size: 25px;
+        width: 190px;
+    }
+    h4 
+    {
+        font-size: 15px;
+    }
+
+    .menu .description .text 
+    {
+        font-size: 14px;
+    }
+
+    .price 
+    {
+        margin-right: 30px;
+        font-size: 14px;
+    }
+    .fa-check-circle
+    {
+        font-size: 15px;
+        padding-top: 25px;
+    }
+
+}
+
+/** MEDIA QUERIES : VERSION TABLETTE ET ORDINATEUR **/
+
+@media screen and (min-width:820px) 
+{
+    body
+    {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+
+    h2 
+    {
+        position:absolute;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    h3 
+    {
+        margin-top: 120px;
+        font-size: 28px;
+    }
+
+    .entrée1, .entrée2, .entrée3, .entrée4, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3
+    {
+        padding: 9px 20px;
+        margin: 50px 20px;
+        height: 70px;
+        width: 78%;
+        h4 
+        {
+            font-size: 20px;
+            margin-top: 5px;
+        }
+    }
+
+    .menu 
+    {
+        display: flex;
+        padding-bottom: 110px;
+        .entrées, .plats, .desserts
+        {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 33%;
+            .bloc
+            {
+                width: 100%;
+                .description .text 
+                {
+                    margin: 0px;
+                    font-size: 18px;
+                    width: 70%;
+                }
+            }
+        }
+    }
+    
+
+    .price
+    {
+         margin: 20px 0px 15px -25px;
+         font-size: 20px;
+    }
+
+    .card_check
+    {
+        margin: -57px -100px 0px 0px;
+        width: 80px;
+        .fa-check-circle
+        {
+            margin-top: 20px;
+        }
+    }
+.entrée1, .entrée2, .entrée3, .entrée4, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3
+{
+        &:hover .card_check
+        {
+            transform: translateX(-80px);
+            transition: all ease-in-out 0.5s;
+            visibility: visible;
+        }
+        &:hover .fa-check-circle
+        {
+            transform: rotate(360deg);
+            transition: transform 0.5s ease-in-out;
+        }
+        &:hover .price 
+        {
+            transform: translateX(-120%);
+            transition: transform ease-in-out 0.3s;
+        }  
+        &:hover .text
+        {
+            width:240px;
+        }
+
+}
+
+.button
+{
+    position: absolute;
+    left: 30rem;
+    bottom: 2rem;
+    margin-bottom: -22px;
+}
+}

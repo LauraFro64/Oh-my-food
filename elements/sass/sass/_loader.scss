@@ -1,0 +1,84 @@
+
+.loader
+{   z-index: 10000;  
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black; 
+    animation: appear 3s forwards; /**tient compte de la valeur de l'animation-iteration-count**/
+    gap: 0px 15px; /** = raccourci de grid-gap qui permet de définir les espaces entre les lignes et colonnes**/
+    span
+    {
+      width: 100px;
+      height: 100px;
+      animation: up 0.7s infinite; /**animation-iteration-count : infinite = défini durée jusqu'à la fin de l'animation**/
+    }
+}
+  
+  
+  .circle
+  {
+    border-radius: 50%;
+    background-color: #9356DC; 
+  }
+  
+  .icon
+  { font-size: 100px;
+    color: #FF79DA;
+    animation-delay: 0.2s !important; /**règle prioritaire sinon les 3 éléments sautent en même temps**/
+  }
+  
+  
+  .square
+  {
+      background-color:#99E2D0;
+      animation-delay: 0.5s !important; /**règle prioritaire sinon les 3 éléments sautent en même temps**/
+  }
+
+  @keyframes up 
+  {
+    0%
+    {
+      transform: translateY(0px); /**= déplacer un élément verticalement**/
+    }
+    50%
+    {
+      transform: translateY(-20px); /** rebond vers le haut léger**/
+    }
+    100%
+    {
+      transform: translateY(0px); /**revient à son point de départ**/
+    }
+  }
+
+  @keyframes appear 
+  {
+    0%
+    { 
+      opacity: 1;
+    }
+
+    50%
+    {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+
+    75%
+    {
+      opacity: 0.8;
+      transform: scale(1.5);
+    }
+
+    100%
+    {
+    opacity: 0;
+    transform: scale(1.5);
+    visibility: hidden;
+    }
+}

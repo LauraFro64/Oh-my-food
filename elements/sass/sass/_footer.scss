@@ -1,0 +1,83 @@
+/** FOOTER **/
+footer
+{   
+    position: relative;
+    background-color: $colorBG2;
+    color: white;
+    font-weight: 400;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-family: "Roboto";
+    font-size: 20px;
+    margin-top: -170px;
+    cursor: pointer;
+}
+
+h1
+{
+  font-family: "shrikhand";
+  font-size: 35px;
+  padding:0px;
+}
+
+.fa-utensils, .fa-handshake-angle
+{
+  position: absolute;
+  padding-top: 5px;
+
+}
+
+.footer1 p, .footer2 p
+{
+  padding-left: 30px;
+
+}
+
+.footer4 a, .footer3 p
+{
+  text-decoration: none;
+  color: white;
+}
+
+/** MEDIA QUERIES : VERSION TABLETTE ET ORDINATEUR **/
+@media screen and (min-width:768px)
+{
+  
+footer
+{   
+    padding-left: 0px;
+    margin: 0px;
+}
+.footer
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+h1 
+{
+  position: absolute;
+  font-size: 50px;
+  margin-top: -10px;
+}
+
+.footer1, .footer2, .footer3
+{
+  margin-top: 70px;
+  font-size: 20px;
+}
+
+.fa-handshake-angle, .fa-utensils
+{
+  margin-top: 18px;
+}
+
+.footer4
+{
+  margin-top: 89px;
+  font-size: 20px;
+}
+}

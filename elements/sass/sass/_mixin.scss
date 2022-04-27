@@ -23,7 +23,7 @@
     background: linear-gradient(170deg, #FF79DA, #9356DC);
     border-radius: 40px;
     text-decoration: none;
-    padding: 20px 30px;
+    padding: 17px 20px;
     color: white;
     font-size: 1.3rem;
     box-shadow: 1px 2px 3px 1px rgb(105, 104, 104);
@@ -42,7 +42,7 @@
     {
         z-index: 1000;
         position: absolute;
-        font-size: 35px;
+        font-size: 30px;
         color: white;
         background-clip: text;
         -webkit-text-stroke-width: 3px; /**rebords du coeur **/
@@ -62,7 +62,7 @@
     .heart2 .fa-heart
     {   z-index: 100;
         position: absolute;
-        font-size: 35px;
+        font-size: 30px;
         background: linear-gradient($color-primary,$color-secondary);
         background-clip: text;
         -webkit-background-clip: text;

@@ -157,7 +157,7 @@ body {
   background-color: #e5e5e5;
   border: transparent;
   padding: 8px 10px;
-  font-size: 23px;
+  font-size: 18px;
 }
 
 .maps {
@@ -166,7 +166,7 @@ body {
 }
 
 .maps .fa-location-dot {
-  font-size: 28px;
+  font-size: 25px;
 }
 
 /** PRESENTATION "RESERVEZ LE MENU..." **/
@@ -182,12 +182,12 @@ body {
 }
 
 .presentation h2 {
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 0px;
 }
 
 .presentation p {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
   padding: 0px 40px 20px 40px;
 }
@@ -201,7 +201,7 @@ body {
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   border-radius: 40px;
   text-decoration: none;
-  padding: 20px 30px;
+  padding: 17px 20px;
   color: white;
   font-size: 1.3rem;
   -webkit-box-shadow: 1px 2px 3px 1px #696868;
@@ -223,8 +223,8 @@ aside, article {
 }
 
 aside h2, article h2 {
-  font-size: 32px;
-  margin: -35px 0px 30px 30px;
+  font-size: 28px;
+  margin: -35px 0px 30px 15px;
 }
 
 .operation1, .operation2, .operation3 {
@@ -236,7 +236,8 @@ aside h2, article h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 23px;
+  font-size: 20px;
+  height: 60px;
   -webkit-box-shadow: 0px 5px 10px 0px #e5e5e5;
           box-shadow: 0px 5px 10px 0px #e5e5e5;
 }
@@ -250,10 +251,11 @@ aside h2, article h2 {
   border: 1px solid transparent;
   background-color: #9356DC;
   color: white;
-  width: 23px;
+  width: 16px;
   border-radius: 50%;
-  padding: 14px 13px 13px 21px;
-  margin: 17px 0px 6px -50px;
+  padding: 12px 13px 13px 19px;
+  margin: 8px 0px 0px -48px;
+  height: 22px;
 }
 
 #number1:hover, #number2:hover, #number3:hover {
@@ -263,8 +265,8 @@ aside h2, article h2 {
 .fa-mobile-screen-button, .fa-list, .fa-store {
   padding: 14px 20px 0px 20px;
   color: gray;
-  font-size: 25px;
-  margin-top: 11px;
+  font-size: 23px;
+  margin-top: 9px;
 }
 
 /** ARTICLE "RESTAURANTS.." **/
@@ -281,7 +283,7 @@ aside h2, article h2 {
 }
 
 #restaurants h2 {
-  margin: 20px 5px;
+  margin: 20px 15px;
 }
 
 .card_image img {
@@ -307,14 +309,18 @@ aside h2, article h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 15px;
-  font-size: 22px;
+  font-size: 18px;
+}
+
+.card_text p {
+  margin-top: 0px;
 }
 
 .card1:hover, .card2:hover, .card3:hover, .card4:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
+  -webkit-transition-duration: .3s linear;
+          transition-duration: .3s linear;
 }
 
 .heart {
@@ -323,13 +329,13 @@ aside h2, article h2 {
   display: flex;
   position: absolute;
   right: 5rem;
-  bottom: 4.5rem;
+  bottom: 3.8rem;
 }
 
 .heart .heart1 .fa-heart {
   z-index: 1000;
   position: absolute;
-  font-size: 35px;
+  font-size: 30px;
   color: white;
   background-clip: text;
   -webkit-text-stroke-width: 3px;
@@ -350,7 +356,7 @@ aside h2, article h2 {
 .heart .heart2 .fa-heart {
   z-index: 100;
   position: absolute;
-  font-size: 35px;
+  font-size: 30px;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
@@ -374,72 +380,72 @@ h3 {
   margin-top: 15px;
 }
 
-.card_text p {
-  margin-top: 0px;
-}
-
 article a {
   text-decoration: none;
   color: black;
 }
 
-.new {
+.new1, .new2 {
   border: 1px solid transparent;
   color: #0f9070;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #99e2d0;
-  padding: 10px;
+  padding: 7px;
   border-radius: 3px;
-  font-size: 18px;
+  font-size: 15px;
   right: 2.5rem;
-  margin-top: 10px;
+  margin-top: -287px;
+  z-index: 1;
 }
 
 /** MEDIA QUERIES : VERSION MOBILE ++ **/
 @media screen and (max-width: 484px) {
   .operation1, .operation2, .operation3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .fa-mobile-screen-button, .fa-list, .fa-store {
-    font-size: 26px;
-    margin-top: 6px;
+    font-size: 24px;
+    margin-top: 4px;
   }
   #number1, #number2, #number3 {
-    width: 18px;
+    width: 14px;
     margin: 10px 0px 6px -50px;
+    padding-left: 18px;
   }
   .presentation p {
-    font-size: 20px;
-  }
-  .button a {
-    font-size: 1rem;
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 433px) {
-  .card_text {
-    font-size: 20px;
-  }
-  .heart {
-    right: 65px;
-    top: 1.2rem;
-  }
   .maps, .search_city {
     font-size: 14px;
   }
+  .button a {
+    font-size: 1rem;
+  }
+  .presentation h2 {
+    font-size: 28px;
+  }
 }
 
-@media screen and (max-width: 392px) {
+@media screen and (max-width: 360px) {
   .operation1, .operation2, .operation3 {
     font-size: 16px;
-  }
-  #number1, #number2, #number3 {
-    width: 15px;
-    margin: 5px 0px -5px -42px;
+    padding: 5px;
   }
   .fa-mobile-screen-button, .fa-list, .fa-store {
-    font-size: 23px;
+    font-size: 18px;
     margin-top: 3px;
+    padding: 14px;
+  }
+  #number1, #number2, #number3 {
+    width: 12px;
+    font-size: 14px;
+    margin: 10px 0px 6px -35px;
   }
 }
 
@@ -453,8 +459,8 @@ article a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 29px -1px -91px 20px;
-    width: 40%;
+    margin: 31px -1px -77px 20px;
+    width: 320px;
   }
   .maps {
     background-color: #e5e5e5;
@@ -462,16 +468,48 @@ article a {
     border-radius: 10px;
     padding: 15px 10px;
     font-size: medium;
-    width: 45%;
+    width: 35%;
     margin: 15px 30px 30px auto;
   }
   /** PRESENTATION "RESERVEZ LE MENU..." **/
   main section {
     border-top: 3px solid #333333;
   }
+  /** ASIDE "FONCTIONNEMENT..." **/
+  .fonctionnement_details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #number1, #number2, #number3 {
+    height: 21px;
+    font-size: 18px;
+    width: 18px;
+  }
+  .fa-mobile-screen-button, .fa-list, .fa-store {
+    margin-top: 5px;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  aside p {
+    font-size: 1rem;
+    margin-top: 12px;
+  }
+  .operation1, .operation2, .operation3 {
+    margin: 5px 0px 0px 20px;
+    width: 26%;
+    height: 57px;
+  }
   /** ARTICLE "RESTAURANTS.." **/
   #restaurants {
-    padding: 0px;
+    padding-bottom: 25px;
   }
   .article_cards {
     display: -webkit-box;
@@ -486,14 +524,13 @@ article a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .card1, .card2, .card3, .card4 {
+  .article_cards .card1, .article_cards .card2, .article_cards .card3, .article_cards .card4 {
     width: 48%;
   }
-  .card_image img {
+  .article_cards .card1 .card_image img, .article_cards .card2 .card_image img, .article_cards .card3 .card_image img, .article_cards .card4 .card_image img {
     border-radius: 20px;
     -o-object-fit: cover;
        object-fit: cover;
-    height: 350px;
   }
   .card_text {
     background-color: white;
@@ -506,37 +543,13 @@ article a {
   }
 }
 
-@media screen and (min-width: 850px) {
-  /** ASIDE "FONCTIONNEMENT..." **/
-  .fonctionnement_details {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  #number1, #number2, #number3 {
-    height: 25px;
-    font-size: 18px;
-    width: 18px;
-  }
-  .fa-mobile-screen-button, .fa-list, .fa-store {
-    margin-top: 16px;
-    font-size: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
+@media screen and (min-width: 809px) {
+  .operation1, .operation2, .operation3 {
+    width: 18%;
   }
   aside p {
-    font-size: 1.3rem;
-    margin-top: 30px;
-  }
-  .operation1, .operation2, .operation3 {
-    margin: 5px 0px 0px 20px;
-    width: 26%;
+    font-size: 1.1rem;
+    margin-top: 7px;
   }
 }
 
@@ -598,7 +611,7 @@ footer {
   padding-top: 20px;
   padding-bottom: 40px;
   font-family: "Roboto";
-  font-size: 20px;
+  font-size: 16px;
   margin-top: -170px;
   cursor: pointer;
 }

@@ -17,12 +17,16 @@ h1, h2
 
 /** HEADER : LOGO + PHOTO **/
 
+.header 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .fa-arrow-left
     {
-        position: absolute;
         font-size: 40px;
-        top: 1.5rem;
-        left: 2rem;
         &:hover
         {
             color: $color-tertiary;
@@ -35,7 +39,7 @@ h1, h2
   padding: 10px;
   img 
   {
-      width: 50%;
+      width: 80%;
   }
 }
 
@@ -84,10 +88,10 @@ h4
 .menu 
 {
     background-color: $colorBG1;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
     position: relative;
-    margin-top: -200px;
+    margin-top: -60px;
     padding-bottom: 165px;
     .description
     {
@@ -134,7 +138,9 @@ h4
     .fa-check-circle
     {
         color: #ffffff;
-        font-size: 35px;
+        font-size: 40px;
+        margin-top: 12px;
+        margin-right: 9px;
     }
 }
 
@@ -224,19 +230,20 @@ h4
     {
         top:1.5rem
     }
-
-    .fa-check-circle
-    {
-        padding-top: 18px;
-        padding-right: 10px;
-        width: 25px;
-    }
     
     .button a
     {
         padding: 16px 24px;
         font-size: 18px;
     }
+
+    .card_check .fa-check-circle 
+    {
+        font-size: 25px;
+        margin-top: 26px;
+        margin-right: 9px;
+    }
+
 }
 
 @media screen and (max-width:490px) 
@@ -287,12 +294,7 @@ h4
         margin-right: 30px;
         font-size: 14px;
     }
-    .fa-check-circle
-    {
-        font-size: 15px;
-        padding-top: 25px;
-    }
-
+    
 }
 
 /** MEDIA QUERIES : VERSION TABLETTE ET ORDINATEUR **/
@@ -316,7 +318,7 @@ h4
     h3 
     {
         margin-top: 120px;
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .entrée1, .entrée2, .entrée3, .entrée4, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3
@@ -358,7 +360,7 @@ h4
 
     .price
     {
-         margin: 20px 0px 15px -25px;
+         margin: 20px 0px 15px -15px;
          font-size: 20px;
     }
 
@@ -368,9 +370,12 @@ h4
         width: 80px;
         .fa-check-circle
         {
-            margin-top: 20px;
+            margin-top: 15px;
+            font-size: 35px;
+            margin-right: 4px;
         }
     }
+
 .entrée1, .entrée2, .entrée3, .entrée4, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3
 {
         &:hover .card_check

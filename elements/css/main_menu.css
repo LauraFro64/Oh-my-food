@@ -61,11 +61,24 @@ h1, h2 {
 }
 
 /** HEADER : LOGO + PHOTO **/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .fa-arrow-left {
-  position: absolute;
   font-size: 40px;
-  top: 1.5rem;
-  left: 2rem;
 }
 
 .fa-arrow-left:hover {
@@ -78,7 +91,7 @@ h1, h2 {
 }
 
 .logo img {
-  width: 50%;
+  width: 80%;
 }
 
 .image_restaurant img {
@@ -112,7 +125,7 @@ h3::after {
 .heart .heart1 .fa-heart {
   z-index: 1000;
   position: absolute;
-  font-size: 35px;
+  font-size: 30px;
   color: white;
   background-clip: text;
   -webkit-text-stroke-width: 3px;
@@ -133,7 +146,7 @@ h3::after {
 .heart .heart2 .fa-heart {
   z-index: 100;
   position: absolute;
-  font-size: 35px;
+  font-size: 30px;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
@@ -165,10 +178,10 @@ h4 {
 
 .menu {
   background-color: #f6f6f6;
-  border-top-right-radius: 40px;
-  border-top-left-radius: 40px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
   position: relative;
-  margin-top: -200px;
+  margin-top: -60px;
   padding-bottom: 165px;
 }
 
@@ -237,7 +250,9 @@ h4 {
 
 .card_check .fa-check-circle {
   color: #ffffff;
-  font-size: 35px;
+  font-size: 40px;
+  margin-top: 12px;
+  margin-right: 9px;
 }
 
 .entrée1, .entrée2, .entrée3, .entrée4, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3 {
@@ -318,7 +333,7 @@ h4 {
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   border-radius: 40px;
   text-decoration: none;
-  padding: 20px 30px;
+  padding: 17px 20px;
   color: white;
   font-size: 1.3rem;
   -webkit-box-shadow: 1px 2px 3px 1px #696868;
@@ -352,14 +367,14 @@ h4 {
   .heart {
     top: 1.5rem;
   }
-  .fa-check-circle {
-    padding-top: 18px;
-    padding-right: 10px;
-    width: 25px;
-  }
   .button a {
     padding: 16px 24px;
     font-size: 18px;
+  }
+  .card_check .fa-check-circle {
+    font-size: 25px;
+    margin-top: 26px;
+    margin-right: 9px;
   }
 }
 
@@ -394,10 +409,6 @@ h4 {
     margin-right: 30px;
     font-size: 14px;
   }
-  .fa-check-circle {
-    font-size: 15px;
-    padding-top: 25px;
-  }
 }
 
 /** MEDIA QUERIES : VERSION TABLETTE ET ORDINATEUR **/
@@ -413,7 +424,7 @@ h4 {
   }
   h3 {
     margin-top: 120px;
-    font-size: 28px;
+    font-size: 26px;
   }
   .entrée1, .entrée2, .entrée3, .entrée4, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3 {
     padding: 9px 20px;
@@ -452,7 +463,7 @@ h4 {
     width: 70%;
   }
   .price {
-    margin: 20px 0px 15px -25px;
+    margin: 20px 0px 15px -15px;
     font-size: 20px;
   }
   .card_check {
@@ -460,7 +471,9 @@ h4 {
     width: 80px;
   }
   .card_check .fa-check-circle {
-    margin-top: 20px;
+    margin-top: 15px;
+    font-size: 35px;
+    margin-right: 4px;
   }
   .entrée1:hover .card_check, .entrée2:hover .card_check, .entrée3:hover .card_check, .entrée4:hover .card_check, .plat1:hover .card_check, .plat2:hover .card_check, .plat3:hover .card_check, .dessert1:hover .card_check, .dessert2:hover .card_check, .dessert3:hover .card_check {
     -webkit-transform: translateX(-80px);
@@ -506,7 +519,7 @@ footer {
   padding-top: 20px;
   padding-bottom: 40px;
   font-family: "Roboto";
-  font-size: 20px;
+  font-size: 16px;
   margin-top: -170px;
   cursor: pointer;
 }

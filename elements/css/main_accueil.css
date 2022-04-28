@@ -319,8 +319,8 @@ aside h2, article h2 {
 .card1:hover, .card2:hover, .card3:hover, .card4:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
-  -webkit-transition-duration: .3s linear;
-          transition-duration: .3s linear;
+  -webkit-transition-duration: .3s ease-in-out;
+          transition-duration: .3s ease-in-out;
 }
 
 .heart {
@@ -342,15 +342,15 @@ aside h2, article h2 {
   /**rebords du coeur **/
   -webkit-text-stroke-color: black;
   /**couleur rebords du coeur**/
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .9s;
+  transition: all .9s;
   cursor: pointer;
 }
 
 .heart .heart1 .fa-heart:hover {
   opacity: 0;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .9s;
+  transition: all .9s;
 }
 
 .heart .heart2 .fa-heart {
@@ -363,16 +363,16 @@ aside h2, article h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .9s;
+  transition: all .9s;
   cursor: pointer;
   opacity: 1;
 }
 
 .heart .heart2 .fa-heart:hover {
   opacity: 1;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .9s;
+  transition: all .9s;
 }
 
 h3 {
@@ -396,9 +396,9 @@ article a {
   padding: 7px;
   border-radius: 3px;
   font-size: 15px;
-  right: 2.5rem;
-  margin-top: -287px;
+  right: 3rem;
   z-index: 1;
+  margin-top: -287px;
 }
 
 /** MEDIA QUERIES : VERSION MOBILE ++ **/
@@ -435,7 +435,7 @@ article a {
 @media screen and (max-width: 360px) {
   .operation1, .operation2, .operation3 {
     font-size: 16px;
-    padding: 5px;
+    padding: 11px 5px 5px 5px;
   }
   .fa-mobile-screen-button, .fa-list, .fa-store {
     font-size: 18px;
@@ -445,7 +445,13 @@ article a {
   #number1, #number2, #number3 {
     width: 12px;
     font-size: 14px;
-    margin: 10px 0px 6px -35px;
+    margin: 5px 0px 6px -35px;
+  }
+  .card_text {
+    font-size: 16px;
+  }
+  .heart {
+    bottom: 3.5rem;
   }
 }
 
@@ -540,6 +546,9 @@ article a {
   }
   h3 {
     margin-top: 15px;
+  }
+  .new1, .new2 {
+    visibility: hidden;
   }
 }
 
@@ -658,18 +667,18 @@ h1 {
   }
   h1 {
     position: absolute;
-    font-size: 50px;
+    font-size: 40px;
     margin-top: -10px;
   }
   .footer1, .footer2, .footer3 {
-    margin-top: 70px;
+    margin-top: 60px;
     font-size: 20px;
   }
   .fa-handshake-angle, .fa-utensils {
     margin-top: 18px;
   }
   .footer4 {
-    margin-top: 89px;
+    margin-top: 79px;
     font-size: 20px;
   }
 }

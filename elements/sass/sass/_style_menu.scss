@@ -174,22 +174,28 @@ h4
         }
 }
 
-.entrées
+.entrée1, .plat1, .dessert1
 {
-    animation: slide_menu 3s linear;
+    animation: slide_menu 3s ease-in-out;
     
 }
 
-.plats
+.entrée2, .plat2, .dessert2
 {
-    animation: slide_menu 3s linear;
+    animation: slide_menu 3s ease-in-out;
     animation-delay: .4s;
 }
 
-.desserts
+ .entrée3, .plat3, .dessert3
 {
-    animation: slide_menu 3s linear;
+    animation: slide_menu 3s ease-in-out;
     animation-delay: .8s;
+}
+
+.entrée4 
+{
+    animation: slide_menu 3s ease-in-out;
+    animation-delay: .12s;
 }
 
 .button 

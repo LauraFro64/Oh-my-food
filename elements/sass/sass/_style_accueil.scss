@@ -166,7 +166,7 @@ aside, article
 .card1:hover, .card2:hover, .card3:hover, .card4:hover 
 {
   transform: scale(1.02);
-  transition-duration: .3s linear;
+  transition-duration: .3s ease-in-out;
 }
 
 .heart
@@ -201,9 +201,9 @@ article a
   padding: 7px;
   border-radius: 3px;
   font-size: 15px;
-  right: 2.5rem;
-  margin-top: -287px;
+  right: 3rem;
   z-index: 1;
+  margin-top: -287px;
 }
 
 
@@ -261,7 +261,7 @@ article a
   .operation1, .operation2, .operation3
   {
     font-size: 16px;
-    padding: 5px;
+    padding: 11px 5px 5px 5px;
   }
 
   .fa-mobile-screen-button, .fa-list, .fa-store 
@@ -275,7 +275,17 @@ article a
   {
     width: 12px;
     font-size: 14px;
-    margin: 10px 0px 6px -35px;
+    margin: 5px 0px 6px -35px;
+  }
+
+  .card_text
+  {
+    font-size: 16px;
+  }
+
+  .heart
+  {
+    bottom: 3.5rem;
   }
 }
 /** MEDIA QUERIES : VERSION TABLETTE ET ORDINATEUR **/
@@ -384,6 +394,11 @@ main section
    {
      margin-top: 15px;
    }
+
+   .new1, .new2
+{
+  visibility: hidden;
+}
 
 }
 

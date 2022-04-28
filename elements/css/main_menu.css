@@ -132,15 +132,15 @@ h3::after {
   /**rebords du coeur **/
   -webkit-text-stroke-color: black;
   /**couleur rebords du coeur**/
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .9s;
+  transition: all .9s;
   cursor: pointer;
 }
 
 .heart .heart1 .fa-heart:hover {
   opacity: 0;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .9s;
+  transition: all .9s;
 }
 
 .heart .heart2 .fa-heart {
@@ -153,16 +153,16 @@ h3::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .9s;
+  transition: all .9s;
   cursor: pointer;
   opacity: 1;
 }
 
 .heart .heart2 .fa-heart:hover {
   opacity: 1;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .9s;
+  transition: all .9s;
 }
 
 h4 {
@@ -299,23 +299,30 @@ h4 {
   width: 70%;
 }
 
-.entrées {
-  -webkit-animation: slide_menu 3s linear;
-          animation: slide_menu 3s linear;
+.entrée1, .plat1, .dessert1 {
+  -webkit-animation: slide_menu 3s ease-in-out;
+          animation: slide_menu 3s ease-in-out;
 }
 
-.plats {
-  -webkit-animation: slide_menu 3s linear;
-          animation: slide_menu 3s linear;
+.entrée2, .plat2, .dessert2 {
+  -webkit-animation: slide_menu 3s ease-in-out;
+          animation: slide_menu 3s ease-in-out;
   -webkit-animation-delay: .4s;
           animation-delay: .4s;
 }
 
-.desserts {
-  -webkit-animation: slide_menu 3s linear;
-          animation: slide_menu 3s linear;
+.entrée3, .plat3, .dessert3 {
+  -webkit-animation: slide_menu 3s ease-in-out;
+          animation: slide_menu 3s ease-in-out;
   -webkit-animation-delay: .8s;
           animation-delay: .8s;
+}
+
+.entrée4 {
+  -webkit-animation: slide_menu 3s ease-in-out;
+          animation: slide_menu 3s ease-in-out;
+  -webkit-animation-delay: .12s;
+          animation-delay: .12s;
 }
 
 .button {
@@ -566,18 +573,18 @@ h1 {
   }
   h1 {
     position: absolute;
-    font-size: 50px;
+    font-size: 40px;
     margin-top: -10px;
   }
   .footer1, .footer2, .footer3 {
-    margin-top: 70px;
+    margin-top: 60px;
     font-size: 20px;
   }
   .fa-handshake-angle, .fa-utensils {
     margin-top: 18px;
   }
   .footer4 {
-    margin-top: 89px;
+    margin-top: 79px;
     font-size: 20px;
   }
 }

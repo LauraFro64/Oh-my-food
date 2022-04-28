@@ -179,6 +179,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .presentation h2 {
@@ -279,7 +280,8 @@ aside h2, article h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0px 15px 190px 20px;
+  position: relative;
+  padding: 0px 15px 40px 20px;
 }
 
 #restaurants h2 {
@@ -319,8 +321,10 @@ aside h2, article h2 {
 .card1:hover, .card2:hover, .card3:hover, .card4:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
-  -webkit-transition: all 3s ease-in-out;
-  transition: all 3s ease-in-out;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 }
 
 .heart {
@@ -529,9 +533,11 @@ article a {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    position: relative;
   }
   .article_cards .card1, .article_cards .card2, .article_cards .card3, .article_cards .card4 {
     width: 48%;
+    position: relative;
   }
   .article_cards .card1 .card_image img, .article_cards .card2 .card_image img, .article_cards .card3 .card_image img, .article_cards .card4 .card_image img {
     border-radius: 20px;
@@ -609,22 +615,20 @@ article a {
 
 /** FOOTER **/
 footer {
-  position: relative;
   background-color: #353535;
   color: white;
   font-weight: 400;
   padding-left: 25px;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 40px;
   font-family: "Roboto";
   font-size: 16px;
-  margin-top: -170px;
   cursor: pointer;
 }
 
 h1 {
   font-family: "shrikhand";
-  font-size: 35px;
+  font-size: 30px;
   padding: 0px;
 }
 
@@ -646,6 +650,7 @@ h1 {
 @media screen and (min-width: 768px) {
   footer {
     padding-left: 0px;
+    padding-top: 10px;
     margin: 0px;
   }
   .footer {
@@ -664,18 +669,18 @@ h1 {
   }
   h1 {
     position: absolute;
-    font-size: 40px;
-    margin-top: -10px;
+    font-size: 30px;
+    margin-top: 25px;
   }
   .footer1, .footer2, .footer3 {
-    margin-top: 60px;
+    margin-top: 80px;
     font-size: 20px;
   }
   .fa-handshake-angle, .fa-utensils {
     margin-top: 18px;
   }
   .footer4 {
-    margin-top: 79px;
+    margin-top: 100px;
     font-size: 20px;
   }
 }

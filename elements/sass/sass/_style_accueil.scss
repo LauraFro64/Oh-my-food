@@ -130,7 +130,7 @@ aside, article
 #restaurants
 {
   @include mise_en_page_2;
-  padding: 0px 15px 190px 20px;
+  padding: 0px 15px 40px 20px;
   h2 
   {
     margin: 20px 15px;
@@ -166,7 +166,7 @@ aside, article
 .card1:hover, .card2:hover, .card3:hover, .card4:hover 
 {
   transform: scale(1.02);
-  transition: all 3s ease-in-out;
+  transition: transform .3s ease-in-out;
 }
 
 .heart
@@ -373,9 +373,11 @@ main section
      flex-direction: row;
      flex-wrap: wrap;
      justify-content: space-around;
+     position: relative;
      .card1, .card2, .card3, .card4
      {
        width: 48%;
+       position: relative;
        .card_image img 
        {
          border-radius: 20px;

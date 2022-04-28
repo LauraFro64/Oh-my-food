@@ -166,7 +166,7 @@ aside, article
 .card1:hover, .card2:hover, .card3:hover, .card4:hover 
 {
   transform: scale(1.02);
-  transition-duration: .3s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 .heart
@@ -394,11 +394,6 @@ main section
    {
      margin-top: 15px;
    }
-
-   .new1, .new2
-{
-  visibility: hidden;
-}
 
 }
 

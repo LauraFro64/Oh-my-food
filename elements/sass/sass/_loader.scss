@@ -14,8 +14,8 @@
     gap: 0px 15px; /** = raccourci de grid-gap qui permet de définir les espaces entre les lignes et colonnes**/
     span
     {
-      width: 100px;
-      height: 100px;
+      width: 60px;
+      height: 60px;
       animation: up 0.7s infinite; /**animation-iteration-count : infinite = défini durée jusqu'à la fin de l'animation**/
     }
 }
@@ -24,19 +24,19 @@
   .circle
   {
     border-radius: 50%;
-    background-color: #9356DC; 
+    background-color: $color-primary; 
   }
   
   .icon
-  { font-size: 100px;
-    color: #FF79DA;
+  { font-size: 60px;
+    color: $color-secondary;
     animation-delay: 0.2s !important; /**règle prioritaire sinon les 3 éléments sautent en même temps**/
   }
   
   
   .square
   {
-      background-color:#99E2D0;
+      background-color: $color-tertiary;
       animation-delay: 0.5s !important; /**règle prioritaire sinon les 3 éléments sautent en même temps**/
   }
 

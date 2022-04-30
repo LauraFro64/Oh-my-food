@@ -39,7 +39,7 @@ h1, h2
   padding: 10px;
   img 
   {
-      width: 80%;
+      width: 70%;
   }
 }
 
@@ -47,6 +47,7 @@ h1, h2
 {
     width: 100%;
     object-fit: cover;
+    height: 400px;
 }
 
 /** MAIN : MENU **/
@@ -72,7 +73,7 @@ h3
     @include heart;
     @include heart2;
     position: absolute;
-    right: 7rem;
+    right: 6rem;
     top: 2rem;
 }
 
@@ -118,11 +119,10 @@ section
 
 .price
 {
-    transition: transform 0.5s;
+    transition: transform;
     transition-property: transform;
-    transition-duration: 0.5s;
+    transition-duration: .7s;
     transition-timing-function: ease;
-    transition-delay: 0s;
     margin-top: 0px;
     font-size: 20px;
 
@@ -137,7 +137,7 @@ section
     align-items: center;
     border-radius: 0 25px 25px 0;
     margin: -63px -90px 0px 0px;
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out .6s;
     visibility: hidden;
     .fa-check-circle
     {
@@ -167,6 +167,7 @@ section
         {
             transform: translateX(-119%);
             transition: transform ease-in-out 0.5s;
+            transition-delay: .1s;
         }  
         &:hover .text
         {
@@ -180,25 +181,25 @@ section
 
 .entrée1, .plat1, .dessert1
 {
-    animation: slide_menu 3s ease-in-out;
+    animation: slide_menu 1s ease-in-out;
     
 }
 
 .entrée2, .plat2, .dessert2
 {
-    animation: slide_menu 3s ease-in-out;
+    animation: slide_menu 1s ease-in-out;
     animation-delay: .4s;
 }
 
  .entrée3, .plat3, .dessert3
 {
-    animation: slide_menu 3s ease-in-out;
+    animation: slide_menu 1s ease-in-out;
     animation-delay: .8s;
 }
 
 .entrée4 
 {
-    animation: slide_menu 3s ease-in-out;
+    animation: slide_menu 1s ease-in-out;
     animation-delay: 1.2s;
 }
 
@@ -216,15 +217,12 @@ section
 
 @media screen and (max-width:580px) 
 {
-    .fa-arrow-left
-    {
-        top: 13px;
-    }
     
-    h2, h3
+    h2
     {
-        font-size: 28px;
+        font-size: 25px;
     }
+
     h4 
     {
         font-size: 22px;
@@ -238,7 +236,8 @@ section
 
     .heart
     {
-        top:1.5rem
+        top: 1.6rem;
+        right: 4rem;
     }
     
     .button a
@@ -258,7 +257,11 @@ section
 
 @media screen and (max-width:490px) 
 {
-
+    .fa-arrow-left
+    {
+        top: 13px;
+        font-size: 22px;
+    }
     h4 
     {
         font-size: 18px;
@@ -298,8 +301,12 @@ section
 {
     h2
     {
-        font-size: 25px;
-        width: 190px;
+        font-size: 22px;
+    }
+
+    h3 
+    {
+        font-size: 18px;
     }
     h4 
     {
@@ -314,6 +321,15 @@ section
     }
     
 }
+
+@media screen and (max-width:310px) 
+{
+    h2
+    {
+        width: 190px;
+    }
+}
+
 
 /** MEDIA QUERIES : VERSION TABLETTE ET ORDINATEUR **/
 
@@ -336,7 +352,7 @@ section
     h3 
     {
         margin-top: 120px;
-        font-size: 26px;
+        font-size: 23px;
     }
 
     .entrée1, .entrée2, .entrée3, .entrée4, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3
@@ -411,7 +427,8 @@ section
             &:hover .price 
             {
                 transform: translateX(-120%);
-                transition: transform ease-in-out 0.3s;
+                transition: transform ease-in-out .5s;
+                transition-delay: .1s;
             }  
             &:hover .text
             {
